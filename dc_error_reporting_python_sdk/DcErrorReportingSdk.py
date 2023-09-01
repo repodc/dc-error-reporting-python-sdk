@@ -13,6 +13,9 @@ class DcErrorReportingSdk:
 
     def send(self, error, url=None):
         try:
+            if not self._token or not self._environment or self._environment == 'local':
+                return ''
+        
             path = "/api/error_report"
 
             error_traceback = traceback.format_exc()
