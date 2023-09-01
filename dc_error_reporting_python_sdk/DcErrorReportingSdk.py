@@ -48,4 +48,5 @@ class DcErrorReportingSdk:
             print(f'Error sending notification: {str(e)}')
 
         finally:
-            connection.close()
+            if 'connection' in locals():
+                connection.close()
