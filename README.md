@@ -77,4 +77,6 @@ Exemplo: o nome do sistema é **Bablepet ERP (API)** então o slug ficará **bab
 
 Ao realizar os testes do SDK durante o desenvolvimento, altere o valor da variável de ambiente **APP_ENV** para "test":
 
-Dessa forma nenhum analista será notificado quando houver erro, mas o log do erro ainda aparecerá em https://dc-error-reporting.dctec.dev/api/error_report/slug-sistema
+Dessa forma nenhum analista será notificado quando houver erro, mas o log do erro aparecerá em https://dc-error-reporting.dctec.dev/api/error_report/slug-sistema/test
+
+Note que ao final da url foi adicionado o **/test**, neste endpoint será mostrado apenas os erros do ambiente de teste.
