@@ -50,7 +50,7 @@ O sistema irá notificar os analistas da DC
    Ao instanciar a classe **DcErrorReportingSdk** informe o nome do sistema corretamente no primeiro parâmetro.
    Observe que o segundo parâmetro do método **send()** é a url requesitada, esse parâmetro é opcional mas é recomendado sempre incluir ele.
 
-4. Caso haja a necessidade de reportar erros que estão contidos em um bloco de **try ... except** basta instanciar a classe novamente, ou importar de algum modulo/contexto global
+4. (OPCIONAL) Caso haja a necessidade de reportar erros que estão contidos em um bloco de **try ... except** basta instanciar a classe novamente, ou importar de algum modulo/contexto global
 
    ```python
     try:
